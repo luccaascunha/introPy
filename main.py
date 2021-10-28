@@ -35,6 +35,65 @@ def brincar_de_plim(fim):
         else:
             print('{:0>3}'.format(numero))
 
+def exibir_dia_da_semana_if(numero):
+    print('Execuçaõ com if')
+    if numero == 2:
+        print('o dia é segunda')
+    elif numero == 3:
+        print('O dia é terça')
+    elif numero == 4:
+        print('O dia é quarta')
+    elif numero == 5:
+        print('O dia é quinta')
+    elif numero == 6:
+        print('O dia é sexta')
+    elif numero == 7:
+        print('O dia é sábado')
+    elif numero == 1:
+        print('O dia é domingo')
+    else:
+        print('O dia não existe. Digite um número de 1 a 7')
+
+'''
+
+def exibir_dia_da_semana_match(numero):
+    print('Execução com match')
+    escolha = 1
+    match escolha:
+        case 1:
+            print('o dia é Domingo')
+            exit()
+        case 2:
+            print('o dia é Segunda')
+            exit()
+        case 3:
+            print('o dia é Terça')
+            exit()
+        case 4:
+            print('o dia é Quarta')
+        case 5:
+            print('o dia é Quinta')
+            exit()
+        case 6:
+            print('o dia é Sexta')
+            exit()
+        case 7:
+            print('o dia é Sábado')
+            exit()
+        case_:
+            print('O dia não existe. Digite um número de 1 a 7')
+
+'''
+def brincar_de_para_ou_continua():
+    resposta = 'C' #S aqui significa que continua
+
+    #while resposta == 'C' or 'c':
+    while resposta.upper() == 'C':
+        resposta = input("Digite C para continuar ou qualquer outro caracter para parar")
+
+    print('Você decidiu parar com a brincadeira')
+
+
 
 if __name__ == '__main__':
     print_hi('Lucas')
@@ -59,3 +118,12 @@ if __name__ == '__main__':
 
     #brincar de pin
     brincar_de_plim(100)
+
+    #exemplo de dia da semana com if - elif - else
+    exibir_dia_da_semana_if(' ')
+
+    #exemplo de dia da semana com match - case
+    #exibir_dia_da_semana_match(1)
+
+    #exemplo com While - para ou continua
+    brincar_de_para_ou_continua()
